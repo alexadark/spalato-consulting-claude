@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-soft-gray text-dark-gray;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  p {
+    @apply font-sans text-base leading-relaxed;
+  }
+}
+
+@layer utilities {
+  /* Brutalist design utilities */
+  .brutalist-border {
+    @apply border-4 border-dark-gray;
+  }
+
+  .brutalist-shadow {
+    box-shadow: 8px 8px 0 0 theme('colors.dark-gray');
+  }
+
+  .high-contrast-btn {
+    @apply bg-adriatic-blue text-white border-4 border-adriatic-blue hover:bg-white hover:text-adriatic-blue transition-colors font-bold;
+  }
+}
